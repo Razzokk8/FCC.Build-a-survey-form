@@ -1,0 +1,113 @@
+:root {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2;
+  color: whitesmoke;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: steelblue;
+}
+h1 {
+  padding-top: 25px;
+  font-weight: 800;
+  line-height: 1.8;
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+form {
+  background: linear-gradient(115deg, #1b1b32, #1b1b32c5);
+  color: lightgrey;
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+  border: solid 10px #1b1b32;
+}
+#survey-form > label {
+  color: steelblue;
+}
+#survey-form {
+  margin: auto;
+  max-width: 740px;
+  min-height: 60vh;
+  position: static;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.2;
+}
+.container {
+  line-height: 1.6;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 1.6rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 2px;
+}
+.input-radio,
+.input-checkbox {
+  height: 20px;
+  width: 20px;
+  margin: 0 12px 0 -1px;
+}
+.submit-button {
+  display: block;
+  background-color: steelblue;
+  border: solid steelblue;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+}
+footer > p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 20px;
+}
+button:hover {
+  color: #1b1b32;
+}
+input:hover {
+  background-color: rgba(245, 245, 245, 0.904);
+}
