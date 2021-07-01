@@ -104,6 +104,7 @@ footer > p {
   font-size: 1.2rem;
   font-weight: 300;
   margin: 20px;
+  color: whitesmoke;
 }
 button:hover {
   color: #1b1b32;
