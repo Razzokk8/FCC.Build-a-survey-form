@@ -10,20 +10,19 @@
   <body>
     <header></header>
     <main>
-      <section>
-        <h1 id="title">freeCodeCamp Survey Form</h1>
+      <section id="t">
+        <div class="a-cont"></div>
+        <h1 id="title">MODULAR SYNTHESIZER - Survey Form</h1>
         <p id="description" style="color: whitesmoke; font-size: large">
-          <em
-            >Thank you for taking the time to help us improve the platform
-          </em>
+          <em>Thank you for taking the time to improve us </em>
         </p>
+        <img src="" alt="" id="shoe" />
         <br />
       </section>
+      <br />
       <form action="" id="survey-form">
         <div>
-          <label for="name" id="name-label" style="color: steelblue"
-            >Full Name:</label
-          >
+          <label for="name" id="name-label" class="label">Full Name:</label>
           <input
             type="text"
             id="name"
@@ -33,11 +32,9 @@
           />
         </div>
         <div>
-          <label for="email" id="email-label" style="color: steelblue"
-            >em@il:</label
-          >
+          <label for="email" id="email-label" class="label">em@il:</label>
           <input
-            type="text"
+            type="email"
             id="email"
             placeholder="razzone88@email.com"
             class="form-control"
@@ -45,12 +42,10 @@
           />
         </div>
         <div>
-          <label for="age" id="number-label" style="color: steelblue"
-            >Age:</label
-          >
+          <label for="age" id="number-label" class="label">Age:</label>
           <input
             type="number"
-            id="age"
+            id="number"
             min="14"
             max="99"
             placeholder="39"
@@ -62,179 +57,236 @@
         <br />
         <div>
           <p style="text-align: left">
-            Which option best describes your current role?
+            Which is the most use of yours Modular Synth?
           </p>
           <select id="dropdown" name="role" class="form-control" required="">
             <option disabled="" selected="" value="">
               Select current role
             </option>
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="learner">Full Time Learner</option>
-            <option value="preferNo">Prefer not to say</option>
+            <option value="analog-modelling">Analog Modelling Synthesis</option>
+            <option value="sequencing">Sequencing</option>
+            <option value="effects">Effects</option>
+            <option value="sound-design">Sound Design</option>
+            <option value="Live">Live Play</option>
             <option value="other">Other</option>
           </select>
         </div>
         <br />
         <div class="form-group">
-          <p style="text-align: left">
-            Would you recommend freeCodeCamp to a friend?
-          </p>
+          <p style="text-align: left">How big is your setup?</p>
           <div class="container">
             <label>
               <input
-                name="user-recommend"
-                value="definitely"
+                name="user-setup"
+                value="less-then-84-HP-(1-row)"
                 type="radio"
                 class="input-radio"
                 checked=""
-              />Definitely</label
+              />Less then 84 HP (1 row)</label
             >
             <label>
               <input
-                name="user-recommend"
-                value="maybe"
+                name="user-setup"
+                value="168-HP-to-336-HP-(2-4row)"
                 type="radio"
                 class="input-radio"
-              />Maybe</label
+              />168 HP to 336 HP (2-4 row)</label
             >
 
             <label
               ><input
-                name="user-recommend"
-                value="not-sure"
+                name="user-setup"
+                value="more-then-336-HP"
                 type="radio"
                 class="input-radio"
-              />Not sure</label
+              />More then 336 HP (4-6 row or more)</label
             >
           </div>
         </div>
+        <br />
         <div class="form-group">
           <p style="text-align: left">
-            What is your favorite feature of freeCodeCamp?
+            What is your favorite feature of a Modular Synthesizer? (Write
+            something)
           </p>
-          <select
-            id="most-like"
-            name="mostLike"
+          <textarea
+            id="favorite-feature"
             class="form-control"
-            required=""
-          >
-            <option disabled="" selected="" value="">Select an option</option>
-            <option value="challenges">Challenges</option>
-            <option value="projects">Projects</option>
-            <option value="community">Community</option>
-            <option value="openSource">Open Source</option>
-          </select>
+            name="favorite-feature"
+            placeholder="Type here..."
+            style="height: 10rem"
+          ></textarea>
         </div>
         <br />
         <p style="text-align: left">
-          What would you like to see improved?
-          <span class="clue">(Check all that apply)</span>
+          What types of Modules are in present in your setup?
         </p>
         <div class="form-group container">
           <label
             ><input
               name="prefer"
-              value="front-end-projects"
+              value="Clock-Generator-Modulator"
               type="checkbox"
               class="input-checkbox"
-            />Front-end Projects</label
+            />Clock Generator/Modulator</label
           >
           <label>
             <input
               name="prefer"
-              value="back-end-projects"
+              value="Drums"
               type="checkbox"
               class="input-checkbox"
-            />Back-end Projects</label
+            />Drums Modules</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Effects"
+              type="checkbox"
+              class="input-checkbox"
+            />Effects</label
           >
           <label
             ><input
               name="prefer"
-              value="data-visualization"
+              value="Envelope-modules"
               type="checkbox"
               class="input-checkbox"
-            />Data Visualization</label
+            />Envelope Modules</label
           >
           <label
             ><input
               name="prefer"
-              value="challenges"
+              value="Vca-amplifiers"
               type="checkbox"
               class="input-checkbox"
-            />Challenges</label
+            />VCA Amplifiers Modules</label
           >
           <label
             ><input
               name="prefer"
-              value="open-source-community"
+              value="Vco-Oscs"
               type="checkbox"
               class="input-checkbox"
-            />Open Source Community</label
+            />VCO Oscillators Modules</label
           >
           <label
             ><input
               name="prefer"
-              value="gitter-help-rooms"
+              value="Filter-Modules"
               type="checkbox"
               class="input-checkbox"
-            />Gitter help rooms</label
+            />Filter Modules and LPG</label
           >
           <label
             ><input
               name="prefer"
-              value="videos"
+              value="Lfo-modules"
               type="checkbox"
               class="input-checkbox"
-            />Videos</label
+            />LFO Modules</label
           >
           <label
             ><input
               name="prefer"
-              value="city-meetups"
+              value="Logic-modules"
               type="checkbox"
               class="input-checkbox"
-            />City Meetups</label
+            />Logic Functions Modules</label
           >
           <label
             ><input
               name="prefer"
-              value="wiki"
+              value="MIDI-int"
               type="checkbox"
               class="input-checkbox"
-            />Wiki</label
+            />MIDI and Interfaces Modules</label
           >
           <label
             ><input
               name="prefer"
-              value="forum"
+              value="Mixer"
               type="checkbox"
               class="input-checkbox"
-            />Forum</label
+            />Mixer Modules</label
           >
           <label
             ><input
               name="prefer"
-              value="additional-courses"
+              value="Multipliers"
               type="checkbox"
               class="input-checkbox"
-            />Additional Courses</label
+            />Multipliers</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Noise"
+              type="checkbox"
+              class="input-checkbox"
+            />Noise Modules</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Random"
+              type="checkbox"
+              class="input-checkbox"
+            />Random Modules</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Sequencers"
+              type="checkbox"
+              class="input-checkbox"
+            />Sequencers</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Samplers-and-S&H-Modules"
+              type="checkbox"
+              class="input-checkbox"
+            />Samplers and S&H Modules</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Utility"
+              type="checkbox"
+              class="input-checkbox"
+            />Utility Attenuator Attenuverters Modules</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Other"
+              type="checkbox"
+              class="input-checkbox"
+            />Other</label
           >
         </div>
+        <br />
         <div class="form-group">
-          <p style="text-align: left">Any comments or suggestions?</p>
+          <p style="text-align: left">Any comments or Patch notations?</p>
           <textarea
             id="comments"
             class="form-control"
             name="comment"
-            placeholder="Enter your comment here..."
+            placeholder="Type here..."
             style="height: 10rem"
           ></textarea>
         </div>
+        <br />
         <button type="submit" id="submit" class="submit-button">Submit</button>
       </form>
     </main>
     <footer>
+      <p style="margin-bottom: -15px">
+        Thanks to: <b>Adi Goldstein </b> for the Background image as
+        <a href="https://unsplash.com/@adigold1">adigold1</a>
+      </p>
       <p><b>Riccardo Limiti </b>&copy; <b>2021</b></p>
     </footer>
   </body>
