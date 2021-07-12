@@ -128,3 +128,16 @@ button:hover {
 /* input:hover {
   background-color: rgba(255, 127, 42, 0.52);
 } */
+@media (max-width: 576px) {
+  h1 {
+    padding-top: 15px;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 3rem;
+    color: whitesmoke;
+  }
+  p,
+  .label {
+    font-weight: 400;
+  }
+}
