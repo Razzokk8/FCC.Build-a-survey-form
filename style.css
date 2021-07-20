@@ -18,9 +18,7 @@
   max-width: 940px;
   margin: auto;
 }
-p {
-  line-height: 2.8rem;
-}
+
 body {
   font-size: 1.2rem;
   font-weight: 400;
@@ -72,6 +70,7 @@ p,
 .label {
   font-weight: 700;
   letter-spacing: 1px;
+  line-height: 3rem;
 }
 .container {
   line-height: 1.6;
